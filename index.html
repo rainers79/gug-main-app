@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>GuG Grill und Genuss - Mobile HQ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600;900&family=Syncopate:wght@400;700&display=swap');
+      
+      :root {
+        --accent-gold: #B5A47A;
+        --accent-rust: #8E442D;
+      }
+
+      body {
+        font-family: 'Outfit', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        overscroll-behavior-y: contain;
+      }
+
+      .font-header {
+        font-family: 'Syncopate', sans-serif;
+      }
+
+      @keyframes spin-slow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+
+      .animate-spin-slow {
+        animation: spin-slow 15s linear infinite;
+      }
+
+      .premium-shadow {
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+      }
+      
+      .gold-glow {
+        box-shadow: 0 0 20px rgba(181, 164, 122, 0.15);
+      }
+
+      .dark .glass-card {
+        background: rgba(18, 18, 18, 0.8);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(181, 164, 122, 0.1);
+      }
+
+      .light .glass-card {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+      }
+
+      /* Verhindert Text-Auswahl für App-Feeling */
+      * {
+        -webkit-tap-highlight-color: transparent;
+        user-select: none;
+      }
+
+      /* Custom Scrollbar für Dark Mode */
+      ::-webkit-scrollbar {
+        width: 4px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #B5A47A44;
+        border-radius: 10px;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.2.4",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+      }
+    }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-black text-[#FFFFFF] overflow-x-hidden">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

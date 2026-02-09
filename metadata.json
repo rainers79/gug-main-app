@@ -1,0 +1,7 @@
+{
+  "name": "GuG Grill und Genuss",
+  "description": "Eine umfassende technische Spezifikation und Management-Dashboard für eine moderne Vereins-App, inklusive interaktiver Kalkulations-Demos und Architektur-Visualisierungen.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
